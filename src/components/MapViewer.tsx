@@ -51,7 +51,7 @@ export default function MapViewer() {
     console.log('Initializing map for', cityName, 'at', cityCenter)
 
     // Use Maptiler Streets with 3D buildings
-    const MAPTILER_KEY = 'get_your_own_OpIi9ZULNHzrESv6T2vL'
+    const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_API_KEY
     
     map.current = new maplibregl.Map({
       container: mapContainer.current,
